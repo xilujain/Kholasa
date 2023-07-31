@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>خلاصة</title>
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <p class="navbar-brand" id="navbar-brand">خُلاصَة</p>
+        <img src="/static/images/Group 1.png" alt="light mode" style="width:62px; height:62px; fill:none" id="navbar-brand-mode" />
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container text-end">
+      <div class="row">
+        <div class="col-sm-8">قم بتلخيص المقالات الطويلة والبحوث بشكل تلقائي وبسرعة عالية</div>
+      </div>
+      <div class="row">
+        <div class="col-sm" id="col-sm">من فضلك أدخل رابط المقالة / البحث المراد تلخيصه ثم اضغط على الزر، ليصلك الملخص بالأسفل تلقائيًا.</div>
+      </div>
+    </div>
+  
+    <div class="container text-end">
+      <form method="POST" action="/analyze_url" name="link-form">
+        <div class="row align-items-center">
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" placeholder="رابط المقالة / البحث" name="raw_url" required = "true" style="direction: rtl;" id="form-control" />
+          </div>
+          <div class="col">
+            <button type="submit" class="btn btn-primary btn-lg" id="btn">اضغط للتلخيص</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+    <div class="section" id="section-output">
+      <div class="container text-end">
+        <div class="row">
+          <div class="col-sm-8" id="section-reserach">{{ section_reserach }}</div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="reserach">{{ ctext }}</div>
+        </div>
+      </div>
+    
+      <div class="container text-end">
+        <div class="row">
+          <div class="col-sm-8" id="section-summerize">{{ section_summerize }}</div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="summerize">{{ final_summary }}</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container text-end">
+      <div class="row">
+        <div class="col-md-8" id="col-md-8">تم تطوير الموقع بواسطة</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-md-4" id="col-6">لجين صلاح</div>
+        <div class="col-6 col-md-4" id="col-6">ابتهال العمري</div>
+        <div class="col-6 col-md-4" id="col-6">لمى الشعباني</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-md-4" id="col-6">حنين الزهراني</div>
+        <div class="col-6 col-md-4" id="col-6">شموخ الحارثي</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/static/js/materialize.js"></script>
+  <script src="/static/js/index.js"></script>
+
+</body>
+</html>

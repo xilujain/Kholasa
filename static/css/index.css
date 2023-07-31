@@ -1,0 +1,79 @@
+:root {
+  --primary-color: black;
+  --secondary-color: orange;
+  --backgroundColor : white;
+}
+.dark-mode {
+  --primary-color: white;
+  --secondary-color: orange;
+  --backgroundColor : black;
+}
+main {
+  background-color: var(--backgroundColor);
+}
+header {
+  background-color: var(--backgroundColor);
+  border-bottom: 1px solid grey;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Greta Arabic;
+}
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+.navbar-brand{
+  font-size: 48px;
+  margin-right: 78px;
+  padding-top: 48px;
+}
+.navbar-brand, .col-sm {
+  color: var(--primary-color);
+}
+.navbar-brand, .col-sm-8 {
+  font-weight: 700;
+}
+.row .col-sm-8 {
+  color: var(--secondary-color);
+  font-size: 36px;
+}
+.row .col-sm {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 32px;
+}
+.container{
+  padding-top: 138px;
+  background-color: var(--backgroundColor);
+}
+.btn, .btn:hover{
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0%;
+  color: var(--backgroundColor);
+}
+footer {
+  padding-top: 20px;
+  border-top: 1px solid grey;
+  background-color: var(--backgroundColor);
+}
+footer .container {
+  padding-bottom: 100px;
+}
+.form-control:focus {
+  border: 1px solid var(--secondary-color);
+  outline: 4px solid var(--secondary-color);
+  background-color: var(--backgroundColor);
+  color: var(--primary-color);
+}
+.form-control {
+  background-color: var(--backgroundColor);
+  color: var(--primary-color);
+}
+.form-control::placeholder {
+  color: grey
+}
+.col-6, .col-md-8 {
+  color: var(--primary-color);
+}

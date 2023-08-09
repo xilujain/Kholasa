@@ -8,7 +8,7 @@
 Using of AI and NLP to read the text from URL and return the original text and the summary of it.
 <br><br>
 
-https://github.com/xilujain/Kholasa/assets/77117920/3d4d8f01-c0c1-46f7-be6a-5e7ac0b6f6d0
+<img src="https://github.com/xilujain/Kholasa/assets/77117920/fa8cb9f3-e1fc-4870-bf36-8c1aaf6a404c" />
 
 <h2 align="left">💻 Software Environment</h2>
 <div align="left">

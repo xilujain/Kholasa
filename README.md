@@ -8,6 +8,8 @@
 Using of AI and NLP to read the text from URL and return the original text and the summary of it.
 <br><br>
 
+https://github.com/xilujain/Kholasa/assets/77117920/3d4d8f01-c0c1-46f7-be6a-5e7ac0b6f6d0
+
 <h2 align="left">💻 Software Environment</h2>
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />

@@ -6,9 +6,8 @@
 
 <h2 align="left"> About Kholasa</h2>
 Using of AI and NLP to read the text from URL and return the original text and the summary of it.
-<br><br>
 
-<br><p><em>Check the <code>Demo</code> folder to watch demo.</em></p>
+<br><p><em>Check out the <code>Demo</code> folder to watch demo.</em></p>
 
 <h2 align="left">💻 Software Environment</h2>
 <div align="left">

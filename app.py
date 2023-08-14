@@ -16,7 +16,7 @@ def get_text(url):
 	fetched_text = ' '.join(map(lambda p:p.text,soup.find_all('p')))
 	return fetched_text
 
-@app.route('/Kholasa')
+@app.route('/')
 def input():
 	return render_template('index.html')
 

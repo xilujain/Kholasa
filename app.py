@@ -21,9 +21,14 @@ def get_text(url):
 def input():
 	return render_template('index.html')
 
-
 @app.route('/analyze_url',methods=['GET','POST'])
+
 def analyze_url():
+	rawtext = ''
+	final_summary = ''
+	raw_url = ''
+	section_reserach = ''
+	section_summerize = ''
 	if request.method == 'POST':
 		raw_url = request.form['raw_url']
 		rawtext = get_text(raw_url)
